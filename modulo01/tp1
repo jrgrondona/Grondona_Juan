@@ -1,1 +1,18 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ejercicio 1 </title>
+</head>
+<body>
+<script>  
+document.writeln("Hola Mundo!");
+</script>
+<p>"Soy el primer script"</p>
+</body>
+</html>
+<body>
+<p>Primer etiqueta con estructura que abren y cierran, DOCTYPE informa al navegador la version</p>
+</body>
+
+</html>
