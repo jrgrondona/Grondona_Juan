@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio N 9</title>
+</head>
+<body>
+    <script>
+        function ArrayJuan(myArray) {
+    var i = 0, summ = 0, ArrayLen = myArray.length;
+    while (i < ArrayLen) {
+        summ = summ + myArray[i++];
+}
+    return summ / ArrayLen;
+    }
+    var myArray = [10, 8, 7, 5, 4];
+    var a = ArrayJuan(myArray);
+    promedio = a
+    if(promedio < 5 ){
+        document.write("Su promedio es de "+promedio + " Reprobado")
+     } else if ( promedio > 5 && promedio <= 8){
+        document.write("Su promedio es de "+promedio + " Aprobado")
+     } else{
+        document.write("Su promedio es de "+promedio + " Sobresaliente")
+     }
+     </script>
+</body>
+</html>

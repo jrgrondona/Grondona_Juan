@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio N 5</title>
+</head>
+<body>
+    <script>
+        function info(cadena){
+        var resultado = "Cadena texto: \"" + cadena + "\"";
+        
+        if(cadena == cadena.toUpperCase()){
+            resultado += " está formada sólo por mayúsculas";
+        }
+        else if(cadena == cadena.toLowerCase()){
+            resultado += " está formada sólo por minúsculas";
+        }
+        else{
+            resultado += " está formada por mayúsculas y minúsculas";
+        }
+        return resultado;
+    }
+    alert(info("ACADEMIA DEL PROGRAMADOR MISIONERO"));
+    alert(info("estoy aprendiendo a programar"));
+    alert(info("Developer Full Stack"));
+     </script>
+</body>
+</html>

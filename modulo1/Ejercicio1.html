@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var verdadero, char
+        var verdadero, char
+        var valores = [verdadero, false, 2, "Hola", " Mundo", 3, " Maravilloso", char];
+        var ListaString =[];
+        var ListaNumeros=[];
+        for(var i=0; i <valores.length; i++){
+            if(typeof valores[i]==="string"){
+                ListaString.push(valores[i]);
+            }
+        }
+        for(var i =0; i <valores.length; i++){
+            if(typeof valores[i]==="number"){
+                ListaNumeros.push(valores[i])
+            }
+        }
+        sumaNumeros=0
+        for(var i=0; i<ListaNumeros.length; i++){
+            sumaNumeros+=ListaNumeros[i];
+        }
+        multiplicacionNumeros=1
+        for(var i=0; i<ListaNumeros.length; i++){
+            multiplicacionNumeros*=ListaNumeros[i];
+            }
+
+        alert("Imprime de menor a mayor: " + ListaString.sort(function(a,b){return a.length - b.length}))
+        alert("La suma de los elementos: " + sumaNumeros)
+        alert("La multiplicación de los elementos: " + multiplicacionNumeros)
+        
+    </script>
+</body>
+</html>

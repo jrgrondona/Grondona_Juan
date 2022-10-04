@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio N 8</title>
+</head>
+<p>Ejercicio 8:
+    Crea una función que genere 100 números aleatorios entre 1 y 100 que no se repitan y luego
+    imprima por pantalla usando document.write(text).</p>
+<body>
+    <script>
+         var lista = [];
+         var repetido;
+        for (var i = 0; i <100; i++) {
+            while (!lista[i]) {
+                repetido = true;
+                while (repetido == true) {
+                    var random = Math.random();
+                    random = random * 100 + 1;
+                    random = Math.trunc(random);
+                    for (var j = 0; j < lista.length; j++) {
+                        if (lista[j] == random) {
+                            repetido = true;
+                            break;
+                        } else {
+                            repetido = false;
+                        }
+                    }
+                    lista[i] = random;
+                }
+
+            }
+        }
+       document.write('Presenta numeros aleatorios <br>');
+       for(f=0;f<lista.length;f++)
+       {
+       document.write(lista[f]+'<br>');
+       }
+    </script>
+</body>
+</html>
